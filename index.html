@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+    <title>Reaction Time Test</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b0877fa0e4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="content-wrapper">
+        <div class="stage first-stage">
+            <h1><i class="fas fa-bolt"></i></h1>
+            <h1 class="test-your-reaction">Test Your Reaction Time</h1>
+            <h4 class="info">When the red box turns green, click.<br>Click anywhere to start.</h4>
+        </div>
+        <div class="stage wait invisible">
+            <h2><i class="fas fa-ellipsis-h"></i></h2>
+            <h1>Wait for green</h1>
+        </div>
+        <div class="stage too-soon invisible">
+            <h1><i class="fa fa-exclamation-circle" aria-hidden="true"></i></h1>
+            <h1>Too soon!</h1>
+            <h4>Click to try again.</h4>
+        </div>
+        <div class="stage click invisible">
+            <h1>Click!</h1>
+        </div>
+        <div class="stage continue invisible">
+            <h2><i class="fas fa-clock"></i></h2>
+            <h1 id="result">0 ms</h1>
+            <h1>Click to continue</h1>
+        </div>
+        <div class="stage result invisible">
+            <h2><i class="fas fa-clock"></i></h2>
+            <h1 id="final-result">0 ms</h1>
+            <button class="btn">Try again</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

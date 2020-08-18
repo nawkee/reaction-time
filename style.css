@@ -1,0 +1,98 @@
+:root {
+    --blue-color: #17a2b8;
+    --red-color: #dc3545;
+    --green-color: #28a745;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+i {
+    font-size: 10rem;
+}
+
+.invisible {
+    display: none;
+    visibility: hidden;
+}
+
+.content-wrapper {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.stage {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    user-select: none;
+}
+
+.first-stage, .continue, .result, .too-soon {
+    background-color: var(--blue-color);
+}
+
+.wait {
+    background-color: var(--red-color);
+}
+
+.click {
+    background-color: var(--green-color);
+}
+
+.btn {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.6rem 3rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3rem;
+    margin: 1rem 0;
+    transition-duration: .4s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+@media(max-width: 900px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media(max-width: 700px) {
+    html {
+        font-size: 40%;
+    }
+}
+
+@media(max-width: 500px) {
+    html {
+        font-size: 30%;
+    }
+}
